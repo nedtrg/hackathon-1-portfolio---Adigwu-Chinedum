@@ -1,0 +1,188 @@
+.aboutfirstcenter{
+    background-color: transparent;
+    display: flex;
+    border-radius: 8px;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.aboutfirstcentercontent{
+    max-width: 700px;
+}
+
+.aboutme{
+    color: cornflowerblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: black;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+
+.aboutmepara p{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: medium;
+    line-height: 1.8;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.aboutfirstcenterimage img{
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.aboutsecondcenter{
+    background-color: transparent;
+    display: flex;
+    border-radius: 8px;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.aboutsecondcentercontent{
+    max-width: 700px;
+}
+
+.education{
+    color: cornflowerblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: black;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+
+.educationpara p{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: medium;
+    line-height: 1.8;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.educationpara > ul > li {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px 0;
+}
+
+.aboutsecondcenterimage img{
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.aboutsecondcenterimagemob img {
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+.aboutthirdcenter{
+    background-color: transparent;
+    display: flex;
+    border-radius: 8px;
+    padding: 50px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.aboutthirdcentercontent{
+    max-width: 700px;
+}
+.technicalskills{
+    color: cornflowerblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: black;
+    border-radius: 20px;
+    padding: 5px 20px;
+    border: 1px solid white;
+}
+.technicalskillspara p{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 0;
+    font-size: medium;
+    line-height: 1.8;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.technicalskillspara > li {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px 0;
+}
+.aboutthirdcenterimage img{
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.pta {
+    text-decoration: none;
+    padding: 8px 20px;
+    background-color: transparent;
+    color: cornflowerblue;
+    font-weight: 600;
+    font-size: 28px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+@media screen and (max-width: 767px) {
+    .aboutfirstcenter {
+        display: block;
+    }
+
+    .aboutsecondcenter {
+        display: block;
+    }
+
+    .aboutsecondcenterimage {
+        display: none;
+    }
+
+    .aboutthirdcenter {
+        display: block;
+    }
+
+    footer {
+        display: block;
+        text-align: center;
+    }
+
+    .foot{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .aboutsecondcenterimagemob {
+        display: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}

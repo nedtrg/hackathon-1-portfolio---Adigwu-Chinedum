@@ -1,0 +1,105 @@
+.formi, label, input{
+    text-align: center;
+}
+h3{
+    color: gold;
+    border-radius: 10px;
+    background-color: rgb(0, 3, 6);
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 20px;
+    text-transform: capitalize;
+}
+
+p{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: capitalize;
+}
+
+.formclass input{
+    display: block;
+    border: 1px solid black;
+    height: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: transparent;
+    width: 100%;
+    border-radius: 10px;
+}
+.formclass{
+    margin: 20px 0;
+}
+
+.hobbies{
+    margin: 20px 0;
+}
+
+.hobbiespan {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.genderspan {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.gender {
+    margin: 5px 0;
+}
+
+.gender label {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.submitbutton{
+    border-style: solid;
+    background-color: gold;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.formclass label {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.formclass textarea {
+    display: block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+}
+
+.hobbies label {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        padding: 0 400px;
+        background-color: rgba(105, 105, 105, 0.135);
+    }
+
+    /* header {
+        width: 1024px !important;
+    } */
+
+    .submitbutton{
+        border-style: solid;
+        background-color: gold;
+        border-radius: 20px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        background-color: rgba(105, 105, 105, 0.135);
+        padding: 0 50px;
+    }
+
+    .submitbutton{
+        border-style: solid;
+        background-color: gold;
+        border-radius: 20px;
+        padding: 10px;
+    }
+}

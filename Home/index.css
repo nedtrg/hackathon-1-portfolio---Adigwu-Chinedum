@@ -1,0 +1,487 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(192, 192, 192, 0.256);
+  line-height: normal;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.codetrg {
+  padding: 40px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: x-large;
+  color: cornflowerblue;
+  -webkit-text-stroke: 1px rgb(193, 190, 190);
+}
+.codetrg a {
+  text-decoration: none;
+  color: cornflowerblue;
+}
+.nav {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  align-items: center;
+  top: 0;
+}
+.resumebutton {
+  background-color: green;
+  border: 2px solid white;
+  border-radius: 10px;
+  align-content: center;
+  padding: 0 10px;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+.resumebutton:hover {
+  animation: bounce 5s infinite;
+}
+
+.pta {
+  text-decoration: none;
+  padding: 8px 20px;
+  background-color: transparent;
+  color: cornflowerblue;
+  font-weight: 600;
+  font-size: 28px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.registerimage {
+  height: 130px;
+  padding-bottom: 50px;
+  padding-left: 0px;
+  margin-left: -10px;
+  position: sticky;
+  margin-top: 50px;
+  width: 180px;
+}
+.links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  text-emphasis: none;
+}
+.links a {
+  color: aliceblue;
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: yellow;
+}
+h1 {
+  color: black;
+  background-color: cornflowerblue;
+  font-size: 3rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+}
+.motto {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+}
+.imagesection {
+  animation: bounce 3s infinite;
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+    transform: rotateY(180deg);
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slidein {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.imagesection img {
+  max-width: 700px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+.center {
+  background-color: transparent;
+  display: flex;
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  animation-name: changecolorcenter;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  position: relative;
+}
+
+/* @keyframes changecolorcenter{
+    0% {background-color: white; left: 0px; top: 0px;}
+    25% {background-color: lightslategray; left: 100px; top: 0px;}
+    50% {background-color: darkkhaki; left: 0px; top: 200px;}
+    100% {background-color: white; left: 0px; top: 0px;}
+} */
+
+@media screen and (min-width: 1024px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+.hamburger {
+  color: cornflowerblue;
+  padding-right: 20px;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.side-menu {
+  height: 50%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transform: 0.3s;
+  padding-top: 60px;
+  z-index: 1;
+  border: 1px solid cornflowerblue;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.side-menu a {
+  text-decoration: none;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.side-menu a:hover {
+  color: yellow;
+}
+
+.sidemenu {
+  text-align: center;
+  font-size: 20px;
+}
+
+.sidemenu > li {
+  padding: 8px 0;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.links.open {
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .links {
+    display: inline-block;
+    font-size: 14px;
+  }
+
+  .links a {
+    padding: 0 5px;
+  }
+
+  .resumebutton {
+    margin-top: 10px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .registerimage {
+    display: none;
+  }
+
+  .codetrg {
+    padding: 40px 20px;
+  }
+
+  .codetrg a {
+    text-decoration: none;
+    color: cornflowerblue;
+  }
+
+  .center {
+    display: block;
+  }
+
+  .secondcenter {
+    display: block;
+    text-align: center;
+  }
+
+  .secondimagesection {
+    text-align: center;
+  }
+
+  footer {
+    display: block;
+    text-align: center;
+  }
+
+  .foot {
+    display: block;
+  }
+
+  .links {
+    display: none;
+  }
+}
+
+.contentsection {
+  max-width: 700px;
+}
+.twopassion {
+  color: darkblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 20px;
+  animation: fadein 2s ease-in-out;
+}
+.introparagraph p {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: medium;
+  line-height: 1.8;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  animation: slidein 1s ease-out;
+}
+.secondcenter {
+  display: flex;
+  text-align: center;
+  background-color: transparent;
+  border-radius: 8px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(192, 192, 192, 0.256);
+  margin-bottom: 20px;
+}
+.secondcentercontentsection {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  max-width: 500px;
+}
+.secondimagesection {
+  text-align: center;
+  transition: transform 0.5s ease-in-out;
+  gap: 50px;
+}
+
+.secondimagesection img:hover {
+  transform: scale(1.1);
+}
+
+.secondimagesection img {
+  margin: 5px 20px;
+  justify-content: left;
+  width: 40%;
+  height: auto;
+  border-radius: 8px;
+}
+.findthelinks {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: darkslategray;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.pleaseclick {
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+footer {
+  display: flex;
+  height: 4rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 10px 30px;
+  color: white;
+  position: relative;
+  bottom: 0;
+}
+.nedtrg a {
+  color: rgb(51, 100, 2);
+  text-decoration: none;
+}
+.footertext {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.thirdcenter {
+  margin: 0px 50px;
+  height: auto;
+  background-color: cornflowerblue;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+h3 {
+  background-color: midnightblue;
+  border-radius: 10px;
+  border-style: solid;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bolder;
+  font-size: x-large;
+}
+.languages {
+  margin: 30px;
+  font-family: cursive;
+  font-weight: bold;
+}
+.languages p {
+  margin-top: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+  font-weight: bold;
+  font-style: italic;
+  color: rgba(41, 5, 67, 0.851);
+}
+.toggle-container {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  cursor: pointer;
+}
+.toggle-icon {
+  color: white;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+body.dark-mode .toggle-icon {
+  color: white;
+}
+
+.skills-container {
+  background: linear-gradient(135deg, #4682b4, #1e3a5f);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0 80px;
+}
+
+.skills-content {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.category h4 {
+  color: #ffd700;
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.category {
+  margin-bottom: 15px;
+}
+
+.category ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.category ul li {
+  padding: 5px 0;
+  display: flex;
+  font-size: 16px;
+  align-self: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.category ul li::before {
+  content: "✓";
+  color: #ffd700;
+  margin-right: 10px;
+  display: inline-block;
+  width: 1em;
+}
+
+.projectgrid img {
+  transition: transform 0.5s ease-in-out;
+}
+
+.projectgrid {
+  margin-bottom: 20px;
+}

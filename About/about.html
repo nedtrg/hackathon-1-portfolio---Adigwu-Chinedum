@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRG's Portfolio</title>
+    <link rel="stylesheet" href="../Home/index.css" />
+    <link id="themestyle" rel="stylesheet" href="../Home/light.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="../fontawesome/css/all.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="codetrg">
+          <a href="../Home/index.html"><h2>CodeTRG</h2></a>
+        </div>
+        <div class="links">
+          <a href="../About/about.html">About</a>
+          <a href="../Contact Us/contact us.html">Contact Us</a>
+          <a href="../Experience/experience.html">Experience</a>
+          <a class="resumebutton" href="../Resume/resume.html">Resume</a>
+        </div>
+        <div>
+          <a href="../Home/regsitration.html"
+            ><img
+              class="registerimage"
+              src="../Images/register-button-png-18462.png"
+          /></a>
+        </div>
+        <button id="day" class="pta" onclick="lite()" style="display: none">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <button id="night" class="pta" onclick="nite()">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+      </nav>
+      <div id="side-menu" class="side-menu">
+        <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()"
+          >&times;</a
+        >
+        <ul class="sidemenu">
+          <li><a href="../About/about.html">About</a></li>
+          <li><a href="../Contact Us/contact us.html">Contact Us</a></li>
+          <li><a href="../Experience/experience.html">Experience</a></li>
+          <li><a href="../Resume/resume.html">Resume</a></li>
+        </ul>
+      </div>
+    </header>
+    <hr />
+    <main>
+      <section class="aboutfirstcenter" id="">
+        <div class="aboutfirstcentercontent">
+          <div class="aboutme">
+            <p>About Me</p>
+          </div>
+          <div class="aboutmepara">
+            <p>
+              I am a passionate and driven junior developer, eager to create
+              innovative and efficient solutions in the tech world. With a focus
+              on learning and growing every day, I thrive on challenges that
+              push me to think critically and creatively.
+            </p>
+          </div>
+        </div>
+        <div class="aboutfirstcenterimage">
+          <img
+            src="../Images/about me images/undraw_learning_sketching_nd4f.svg"
+          />
+        </div>
+      </section>
+      <section class="aboutsecondcenter" id="">
+        <div class="aboutsecondcenterimage">
+          <img src="../Images/about me images/undraw_educator_re_ju47.svg" />
+        </div>
+        <div class="aboutsecondcentercontent">
+          <div class="education">
+            <p>Education</p>
+          </div>
+          <div class="aboutsecondcenterimagemob">
+            <img src="../Images/about me images/undraw_educator_re_ju47.svg" />
+          </div>
+          <div class="educationpara">
+            <p>
+              I am currently pursuing advanced studies in Computer Science at
+              SRH Universities in Germany, specializing in Software Engineering
+              and Artificial Intelligence. This academic experience is helping
+              me refine my skills in data analytics, machine learning and
+              software development. My studies provide me with advanced
+              knowledge of:
+            </p>
+            <ul>
+              <li>Data Analytics</li>
+              <li>Machine Learning</li>
+              <li>Software Development Life Cycle</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="aboutthirdcenter" id="">
+        <div class="aboutthirdcentercontent">
+          <div class="technicalskills">
+            <p>Technical Skills</p>
+          </div>
+          <div class="technicalskillspara">
+            <li>
+              <strong>Programming Languages:</strong> [e.g., Python, Java,
+              JavaScript, etc.]
+            </li>
+            <li>
+              <strong>AI/ML Frameworks:</strong> [e.g., Tensorflow, PyTorch,
+              Scikit-learn]
+            </li>
+            <li>
+              <strong>Data Tools:</strong> [e.g., Pandas, NumPy, SQL, etc.]
+            </li>
+            <li><strong> Version Control:</strong> Git, GitHub</li>
+            <li>
+              <strong>Other Technologies:</strong> [e.g., Docker, APIs, Cloud
+              Platforms]
+            </li>
+          </div>
+        </div>
+        <div class="aboutthirdcenterimage">
+          <img
+            src="../Images/about me images/undraw_engineering_team_a7n2.svg"
+          />
+        </div>
+      </section>
+    </main>
+  </body>
+  <footer class=".foot">
+    <div class="footertext">
+      <h4>
+        CopyRight 2024&copy;
+        <span class="nedtrg"
+          ><a href="https://github.com/nedtrg/nedtrg">NedTRG</a></span
+        >
+      </h4>
+    </div>
+    <div class="footerlogos">
+      <a target="_blank" href="https://www.spotify.com"
+        ><i class="fa-brands fa-spotify" style="font-size: 36px"></i
+      ></a>
+      <a target="_blank" href="https://github.com/nedtrg/nedtrg"
+        ><i class="fa-brands fa-github" style="font-size: 36px"></i
+      ></a>
+      <a target="_blank" href="https://linkedin.com"
+        ><i class="fa-brands fa-linkedin-square" style="font-size: 36px"></i
+      ></a>
+      <a target="_blank" href="https://twitter.com"
+        ><i class="fa-brands fa-twitter" style="font-size: 36px"></i
+      ></a>
+      <a target="_blank" href="https://gmail.com"
+        ><i class="fa-brands fa-google" style="font-size: 36px"></i
+      ></a>
+    </div>
+  </footer>
+  <script src="../Home/main.js"></script>
+</html>
